@@ -70,7 +70,8 @@ span.text-red {
 }
 .logo {
   color: gray;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 600;
 }
 .cart-icon {
   font-size: 25px;
@@ -111,7 +112,7 @@ span.text-red {
   color: #324d67;
 }
 .product-card:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.05);
 }
 .product-image {
   border-radius: 15px;
@@ -387,12 +388,12 @@ span.text-red {
   margin: auto;
 }
 .btn {
-  width: 100%;
+  width: 80%;
   max-width: 400px;
   padding: 10px 12px;
   border-radius: 15px;
   border: none;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 10px;
   margin-top: 40px;
   text-transform: uppercase;
@@ -515,22 +516,41 @@ span.text-red {
   transform: scale(1.1, 1.1);
 }
 .quantity-desc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   border: 1px solid gray;
-  padding: 6px;
+  align-items: center;
+  justify-content: center;
 }
 .quantity-desc span {
   font-size: 16px;
-  padding: 6px 12px;
+  padding: 6px;
   cursor: pointer;
 }
 .quantity-desc .minus {
+  font-size: 20px;
   border-right: 1px solid gray;
   color: #f02d34;
 }
-.quantity-desc .num {
-  border-right: 1px solid gray;
+
+.quantity-desc .minus svg {
   font-size: 20px;
+  padding-top: 10px;
 }
+
+.quantity-desc .plus svg {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.num {
+  width: 50px;
+  border-radius: 5px;
+}
+.cart-quantity-heading {
+  font-size: 14px;
+}
+
 .quantity-desc .plus {
   color: rgb(49, 168, 49);
 }
